@@ -1,0 +1,15 @@
+# Python Cache
+**/__pycache__/
+*.py[cod]
+
+# VSCode Settings
+.vscode/
+
+# Conda Umgebungen
+.conda/
+
+# TensorBoard & Trainingslogs
+logs/
+logs/**
+**/logs/
+**/logs/**
