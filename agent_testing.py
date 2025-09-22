@@ -76,7 +76,6 @@ for col in df.filter(like="_battery_P").columns:
 axes[0].set_ylabel("Power [kW]")
 axes[0].grid(True)
 axes[0].set_xlim([day_start, day_end])
-# Legende oben drüber
 axes[0].legend(frameon=True)
 
 # 2) SOCs
@@ -85,7 +84,6 @@ for col in df.filter(like="_SOC").columns:
 axes[1].set_ylabel("SOC [-]")
 axes[1].grid(True)
 axes[1].set_xlim([day_start, day_end])
-# Legende unten drunter
 axes[1].legend(frameon=True)
 
 # 3) Faktoren
@@ -94,7 +92,6 @@ axes[2].plot(df.index, df["feed_in_factor"], label="Feed-in Tariff", color="tab:
 axes[2].set_ylabel("Costs [ct/kWh]")
 axes[2].grid(True)
 axes[2].set_xlim([day_start, day_end])
-# Legende rechts oben (außerhalb)
 axes[2].legend(frameon=True)
 
 fig.align_ylabels(axes)
